@@ -14,8 +14,7 @@ for(i=0; i<textoArea.length; i++){
 vec[i]=textoArea.charAt(i);
 }
 for(ii=0; ii<textoArea.length; ii++){
-	var resultado = ('<br />'+'Posicion: '+ii+" valor: "+vec[ii])
-contenedor.innerHTML= resultado; 
+	alert('<br />'+'Posicion: '+ii+" valor: "+vec[ii]); 
 }
 }
 
@@ -78,7 +77,7 @@ contenedor.innerHTML= resultado;
 <TEXTAREA ID="area" COLS=20 ROWS=10>
 Texto dentro del área de texto </TEXTAREA><BR>
 <INPUT TYPE="button" VALUE="Contar las palabras" onClick="contar();">
-	  <center><h3><p id="resultado" > </p></h3></center>
+	 
 	</section>  
 	<section id="footer">
 						<div class="inner">
