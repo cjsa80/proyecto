@@ -1,0 +1,23 @@
+<html>
+<head>
+<title>Funcion contar caracteres con javascript</title>
+
+<script type="text/javascript">
+
+function contar() {
+textoArea = document.getElementById("area").value;
+alert("El numero de caracteres es : "+textoArea.length);
+
+}
+
+</script>
+</head>
+<body>
+
+<FORM ID="formulario" ACTION="#">
+<TEXTAREA ID="area" COLS=20 ROWS=10>
+Texto dentro del área de texto </TEXTAREA><BR>
+<INPUT TYPE="button" VALUE="Contar caracteres" onClick="contar();">
+</FORM>
+</body>
+</html>
