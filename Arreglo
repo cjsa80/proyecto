@@ -1,0 +1,28 @@
+<html>
+<head>
+<title>javascript</title>
+
+<script type="text/javascript">
+
+function contar() {
+var vec = [];
+textoArea = document.getElementById("area").value;
+for(i=0; i<textoArea.length; i++){
+vec[i]=textoArea.charAt(i);
+}
+for(ii=0; ii<textoArea.length; ii++){
+document.write('<br />'+'dimension: '+ii+" valor: "+vec[ii]); 
+}
+}
+
+</script>
+</head>
+<body>
+
+<FORM ID="formulario" ACTION="#">
+<TEXTAREA ID="area" COLS=20 ROWS=10>
+Texto dentro del área de texto </TEXTAREA><BR>
+<INPUT TYPE="button" VALUE="Contar las palabras" onClick="contar();">
+</FORM>
+</body>
+</html>
