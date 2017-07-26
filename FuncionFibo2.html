@@ -1,0 +1,104 @@
+<html>
+    <head>
+        <title>Elements - Solid State by HTML5 UP</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <script type="text/javascript">
+            function fibonacci()
+            {
+                var contenedor = document.getElementById("resultado");
+                var inicio = parseInt(document.getElementById("inicio").value);
+                var final = parseInt(document.getElementById("final").value);
+                var suma = 0, a = 0, b = 1;
+                var resultado = "";
+
+                for (var i = 1; i <= final; i++)
+                {
+                    a = b;
+                    b = suma;
+                    suma = a + b;
+                    if (inicio == 0 && i == 1)
+                    {
+                        resultado += "El valor de 0 es 0 <br>";
+                    }
+                    if (inicio <= i)
+                    {
+                        resultado += "Al valor " + i + " le corresponde: " + suma + "<br>";
+                    }
+                }
+
+                contenedor.innerHTML = resultado;
+
+            }
+        </script>
+        <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+        <link rel="stylesheet" href="assets/css/main.css" />
+        <!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+        <!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+    </head>
+    <body>
+
+        <!-- Page Wrapper -->
+        <div id="page-wrapper">
+
+            <!-- Header -->
+            <header id="header">
+                <h1><a href="index.html">Solid State</a></h1>
+                <nav>
+                    <a href="#menu">Menu</a>
+                </nav>
+            </header>
+
+            <!-- Menu -->
+            <nav id="menu">
+                <div class="inner">
+                    <h2>Menu</h2>
+                    <ul class="links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="generic.html">Generic</a></li>
+                        <li><a href="elements.html">Elements</a></li>
+                        <li><a href="#">Log In</a></li>
+                        <li><a href="#">Sign Up</a></li>
+                    </ul>
+                    <a href="#" class="close">Close</a>
+                </div>
+            </nav>
+
+            <!-- Wrapper -->
+            <section id="wrapper">
+
+                <!-- Content -->
+                <div class="wrapper">
+                    <div class="inner">
+
+                        <section>
+                            <center><h1 class="major">Funcion Fibonacci</h1 ></center>
+                            <center><h4>Desarrollo Web 2017</h4></center><br>
+                            <h3>Ingresa los siguientes valores:</h3>
+                            <p> 
+                            <p>Valor inicial: 
+                                <input id="inicio" type="text" /> </p>
+                            <p>Valor final:
+                                <input id="final" type="text" /> </p>
+                            <p>
+                                <input id="accion" type="button" value="Ejecutar" onclick="fibonacci();" /> </p>
+                            <center><h3><p id="resultado" > </p></h3></center>
+
+                        </section>                     
+
+                    </div>
+                </div>
+
+        </div>
+
+        <!-- Scripts -->
+        <script src="assets/js/skel.min.js"></script>
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/jquery.scrollex.min.js"></script>
+        <script src="assets/js/util.js"></script>
+        <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+        <script src="assets/js/main.js"></script>
+
+    </body>
+</html>
+

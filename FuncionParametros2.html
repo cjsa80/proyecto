@@ -1,0 +1,122 @@
+<html>
+    <head>
+        <title>Funcion con Parametros</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        
+        <script type="text/javascript">
+		function Sumar(valor1, valor2){
+		contenedor=document.getElementById("resultado");
+		var valor1=document.getElementById("valor1").value;
+		var valor2=document.getElementById("valor2").value;	
+		var suma= parseInt(valor1)+parseInt(valor2);
+	
+		//alert("La suma es: "+suma);
+		contenedor.innerHTML= "La suma de "+valor1+" + "+valor2+" es: " + suma;
+		}
+
+		function Restar(valor1, valor2){
+		contenedor=document.getElementById("resultado");
+		var valor1=document.getElementById("valor1").value;
+		var valor2=document.getElementById("valor2").value;	
+		var restar=parseInt(valor1)-parseInt(valor2);
+
+		//alert("La resta es: "+restar);	
+		contenedor.innerHTML= "La resta de "+valor1+" - "+valor2+" es: " + restar;
+		}
+
+		function Multiplicar(valor1, valor2){
+		contenedor=document.getElementById("resultado");
+		var valor1=document.getElementById("valor1").value;
+		var valor2=document.getElementById("valor2").value;	
+		var multi= parseInt(valor1)*parseInt(valor2);
+
+		//alert("La multiplicación es: "+multi);
+		contenedor.innerHTML= "La multiplicacion de "+valor1+" * "+valor2+" es: "+ multi;
+		}
+
+		function Dividir(valor1, valor2){
+		contenedor=document.getElementById("resultado");
+		var valor1=document.getElementById("valor1").value;
+		var valor2=document.getElementById("valor2").value;	
+		var dividir= parseInt(valor1)/parseInt(valor2);
+
+		//alert("La división es: "+dividir);
+		contenedor.innerHTML= "La division de "+valor1+" / "+valor2+" es: " + dividir;
+		}
+	</script>
+        <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+        <link rel="stylesheet" href="assets/css/main.css" />
+        <!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+        <!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+    </head>
+    <body>
+
+        <!-- Page Wrapper -->
+        <div id="page-wrapper">
+
+            <!-- Header -->
+            <header id="header">
+                <h1><a href="index.html"></get></a></h1>
+                <nav>
+                    <a href="#menu">Menu</a>
+                </nav>
+            </header>
+
+            <!-- Menu -->
+            <nav id="menu">
+                <div class="inner">
+                    <h2>Menu</h2>
+                    <ul class="links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="generic.html">Generic</a></li>
+                        <li><a href="elements.html">Elements</a></li>
+                        <li><a href="#">Log In</a></li>
+                        <li><a href="#">Sign Up</a></li>
+                    </ul>
+                    <a href="#" class="close">Close</a>
+                </div>
+            </nav>
+
+            <!-- Wrapper -->
+            <section id="wrapper">
+
+                <!-- Content -->
+                <div class="wrapper">
+                    <div class="inner">
+
+                        <section>
+                            <center><h1 class="major">Funcion con Parametros</h1 ></center>
+                            <center><h4>Desarrollo Web 2017</h4></center><br>
+                            <p> 
+                            <h1>Operaciones Basicas </h1>
+                            <p>Ingrese el valor 1: 
+                            <input id="valor1" type="text" />
+                            </p>
+                            <p>Ingrese el valor 2:
+                            <input id="valor2" type="text" />
+                            </p>
+                            <p>
+                            <input id="accion" type="button" value="Sumar" onclick="Sumar(valor1, valor2);" />
+                            <input id="accion" type="button" value="Restar" onclick="Restar(valor1, valor2);" />
+                            <input id="accion" type="button" value="Multiplicar" onclick="Multiplicar(valor1, valor2);" />
+                            <input id="accion" type="button" value="Dividir" onclick="Dividir(valor1, valor2);" />
+                            <center><h3><p id="resultado" > </p></h3></center>
+
+                        </section>                     
+
+                    </div>
+                </div>
+
+        </div>
+
+        <!-- Scripts -->
+        <script src="assets/js/skel.min.js"></script>
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/jquery.scrollex.min.js"></script>
+        <script src="assets/js/util.js"></script>
+        <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+        <script src="assets/js/main.js"></script>
+
+    </body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE HTML>
+<!--
+	Solid State by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Desarrollo Web</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+	</head>
+	<body>
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+				<!-- Header -->
+					<header id="header" class="alt">
+						<h1><a href="incio.html">Inicio</a></h1>
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<div class="inner">
+							<h2>Menu</h2>
+							<ul class="links">
+								<li><a href="inicio.html">Home</a></li>
+								<li><a href="CountCar.html">Conteo de Caracteres</a></li>
+								<li><a href="CaptTex.html">Captura de Texto</a></li>
+								<li><a href="FuncionFibo2.html">Fibonacci</a></li>
+								<li><a href="FuncionParametros2.html">Funcion con Parametros</a></li>
+								<li><a href="DosCarac.html">DosCaracteres</a></li>
+								<li><a href="index.html">Log Out</a></li>
+								
+							</ul>
+							<a href="#" class="close">Close</a>
+						</div>
+					</nav>
+
+				<!-- Banner -->
+					<section id="banner">
+						<div class="inner">
+							<div class="logo"><span class="icon fa-diamond"></span></div>
+							<!--<h2>This is Solid State</h2>-->
+							
+							<script> 
+
+								var mydate=new Date(); 
+								var year=mydate.getYear(); 
+								var hora=mydate.getHours();
+								var minuto=mydate.getMinutes();
+								var segundo=mydate.getSeconds();
+								var muestrahora = hora + ":" + minuto + ":" + segundo;
+								
+								if (year < 1000) 
+								year+=1900; 
+								var day=mydate.getDay(); 
+								var month=mydate.getMonth()+1; 
+								if (month<10) 
+								month="0"+month; 
+								var daym=mydate.getDate(); 
+								if (daym<10) 
+								daym="0"+daym; 
+								document.write("<h2><font color='000000' face='Arial'><b>"+daym+"/"+month+"/"+year+" Hora Actual "+muestrahora+"</b></font></h2>") 
+
+							</script> 
+						</div>
+					</section>
+
+
+				<!-- Footer -->
+					<section id="footer">
+						<div class="inner">
+							<h2 class="major">Grupo 4</h2>
+							<ul class="copyright">
+								<li>&copy; Untitled Inc. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+							</ul>
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
